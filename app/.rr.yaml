@@ -27,4 +27,4 @@ otel:
   resource:
     service_name: rr-temporal-samples
     service_version: 1.0.0
-  endpoint: ${OTEL_HOST:-localhost}:${OTEL_PORT:-4318}
+  endpoint: ${OTEL_HOST:-localhost}:${OTEL_PORT:-4320}

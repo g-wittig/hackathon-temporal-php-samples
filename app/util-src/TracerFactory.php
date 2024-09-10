@@ -30,7 +30,7 @@ final class TracerFactory
     {
         $endpoint = getenv('OTEL_COLLECTOR_ENDPOINT');
         if (empty($endpoint)) {
-            $endpoint = 'http://collector:4317';
+            $endpoint = 'http://collector:4319';
         }
 
         $transport = (new GrpcTransportFactory())->create($endpoint . OtlpUtil::method(Signals::TRACE));

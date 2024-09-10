@@ -79,7 +79,7 @@ services:
     networks:
       - temporal-network
     ports:
-      - 8080:8080
+      - 9090:9090
 
   collector:
     container_name: collector
@@ -88,8 +88,8 @@ services:
       - temporal-network
     command: [ "--config=/etc/otel-collector-config.yml" ]
     ports:
-      - 4317:4317
-      - 4318:4318
+      - 4319:4319
+      - 4320:4320
     volumes:
       - ./docker/otel/otel-collector-config.yml:/etc/otel-collector-config.yml
 
